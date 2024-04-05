@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login Page</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="bg-gradient">
+    <div class="mid">
+      <ul class="navbar">
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+      </ul>
+      <!-- Hamburger menu icon -->
+      <div class="hamburger-menu" onclick="toggleSidebar()">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+
+      <!-- Sidebar -->
+      <div class="sidebar" id="sidebar">
+        <div class="sidemenu">
+          <a href="#">Home</a>
+          <a href="#">About Us</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Log out</a>
+        </div>
+       
+      </div>
+
+
+    </div>
+    <div class="tag">
+      <p>SmartEye</p>
+      <p>Welcome</p>
+    </div>
+    <div class="container">
+      <div class="form-div">
+        <form action="" class="main-form" >
+          <label for="">Name</label>
+          <input type="text" />
+          <label for="">Email</label>
+          <input type="email" />
+          <label for="">Password</label>
+          <input type="password" id="password">
+          <label for="">Accout Details</label>
+          <input type="number" />
+          <button class="btn"><a href="landing.html">Log In</a></button>
+        </form>
+      </div>
+      <div class="right">
+        <img src="imggg.png" alt="" />
+      </div>
+    </div>
+    <div class="sign-in">
+      <p id="para"><a href="registration.html">Sign In</p>
+      <p>if not Logged In</a></p>
+
+    </div>
+  </div>
+
+  <script>
+    function toggleSidebar() {
+      document.getElementById('sidebar').classList.toggle('active');
+    }
+    const links = document.querySelectorAll('.sidemenu a');
+
+links.forEach(link => {
+    link.addEventListener('mouseover', () => {
+        link.classList.add('hover');
+    });
+    link.addEventListener('mouseout', () => {
+        link.classList.remove('hover');
+    });
+});
+
+
+  </script>
+
+</body>
+
+</html>

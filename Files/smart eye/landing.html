@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap" rel="stylesheet">
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    .bg-gradient {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        background: linear-gradient(180deg,
+                #4d438e 0%,
+                rgba(77, 69, 144, 0.961) 0.01%,
+                rgba(77, 69, 144, 0.961) 0.02%,
+                rgba(77, 70, 145, 0.950889) 0.03%,
+                rgba(74, 77, 155, 0.81557) 0.04%,
+                rgba(74, 77, 155, 0.81557) 17.4%,
+                rgba(62, 113, 204, 0.172163) 99.99%,
+                rgba(59, 122, 217, 0) 100%);
+    }
+
+    .options {
+        margin-top: 110px;
+        margin-left: 40px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-inline: auto;
+
+
+    }
+
+    .headline {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 80px;
+        font-size: 60px;
+
+        font-family: "Bruno Ace", sans-serif;
+    }
+
+    .box {
+
+        background: linear-gradient(180deg, #4D438E 0%, rgba(77, 69, 144, 0.961) 0.01%, rgba(77, 69, 144, 0.961) 0.02%, rgba(77, 70, 145, 0.950889) 0.03%, rgba(74, 77, 155, 0.81557) 0.04%, rgba(74, 77, 155, 0.81557) 17.4%, rgba(62, 113, 204, 0.172163) 99.99%, rgba(59, 122, 217, 0) 100%);
+        border-radius: 20px;
+        height: 325px;
+        width: 325px;
+    }
+
+    .box p {
+        margin-left: 20px;
+        margin-top: 37px;
+        font-size: 30px;
+        color: #a530a5;
+        margin-bottom: 5px;
+    }
+
+    .box button {
+        margin-left: 20px;
+        font-size: 20px;
+        height: 40px;
+        width: 110px;
+        border-radius: 46px;
+        background-color:
+            #05AD5F;
+
+    }
+
+    .box button a {
+        text-decoration: none;
+        color: aliceblue;
+
+    }
+
+    .box img {
+        height: 124px;
+        margin-top: 45px;
+        margin-left: 43px;
+    }
+</style>
+
+<body>
+    <div class="bg-gradient">
+        <div class="headline">
+            <p>Resources you</p>
+            <p> Search For</p>
+        </div>
+
+        <div class="options">
+            <div class="box">
+                <img src="Illustration - Asset 35.png" alt="">
+                <p>Limit Settings</p>
+                <button><a href="">Spot it</a></button>
+            </div>
+            <div class="box">
+                <img src="Illustration - Asset 100.png" alt="">
+                <p>Fraud Detection</p>
+                <button><a href="">Spot it</a></button>
+            </div>
+            <div class="box">
+                <img src="Illustration - Asset 6.png" alt="">
+                <p>Account Details</p>
+                <button><a href="">Spot it</a></button>
+            </div>
+
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <title>Login Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap" rel="stylesheet">
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    .bg-gradient {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        background: linear-gradient(180deg,
+      #4d438e 0%,
+      rgba(77, 69, 144, 0.961) 0.01%,
+      rgba(77, 69, 144, 0.961) 0.02%,
+      rgba(77, 70, 145, 0.950889) 0.03%,
+      rgba(74, 77, 155, 0.81557) 0.04%,
+      rgba(74, 77, 155, 0.81557) 17.4%,
+      rgba(62, 113, 204, 0.172163) 99.99%,
+      rgba(59, 122, 217, 0) 100%);
+
+    }
+     .headline {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 80px;
+        font-size: 50px;
+        font-family: "Bruno Ace", sans-serif;
+    }
+    .right img {
+    width: 402px;
+    height: 420px;
+    margin-left: 1148px;
+    margin-top: -404px;
+}
+.main-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  width: auto;
+  margin-top: 30px;
+
+}
+
+.main-form input {
+  width: 400px;
+  height: 30px;
+  padding: 6px;
+  border: none;
+  border-radius: 20px;
+  font-size: 20px;
+}
+
+.main-form label {
+  color: aliceblue;
+  font-size: 17px;
+}
+
+.form-div {
+    background: linear-gradient(90deg, rgba(58, 154, 195, 0.64) 0%, rgba(101, 218, 234, 0.478538) 95.82%);
+    width: 646px;
+    height: 354px;
+    display: flex;
+    border-radius: 120px;
+    justify-content: center;
+    padding: 10px;
+    margin-left: 181px;
+    margin-top: 36px;
+}
+
+.btn {
+  color: black;
+  background-color: #85fd7b;
+  padding: 4px 14px;
+  border: 3px solid rgb(15, 15, 15);
+  border-radius: 6px;
+  font-size: 20px;
+  cursor: pointer;
+  margin: auto;
+}
+.btn:hover {
+   background-color: #d2b8d4; 
+  color: black; }
+  .main-form button a{
+    text-decoration: none;
+  }
+  .main-form p {
+    display: inline;
+    margin-top: 35px;
+    height: 50px;
+    width: 442px;
+    background-color: white;
+    display: flex;
+    flex-direction: column-reverse;
+    /* flex-wrap: wrap; */
+    /* align-content: stretch; */
+    justify-content: center;
+    border-radius: 32px;
+    font-size: 18px;
+}
+.slider-container {
+    display: inline-block;
+    position: relative;
+    width: 50px;
+    height: 27px;
+    margin-top: -47px;
+    margin-left: 361px;
+}
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+  }
+
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 19px;
+    width: 18px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+
+  /* Hide default HTML checkbox */
+  input {
+    display: none;
+  }
+</style>
+
+<body>
+    <div class="bg-gradient">
+        <div class="headline">
+            <p>Fraud</p>
+            <p>Detection</p>
+        </div>
+        <div class="container">
+            <div class="form-div">
+                <form action="" class="main-form">
+                    <p>Enable Fraud Detection:</p>
+                    <label class="slider-container">
+                        <input type="checkbox" id="toggleBtn" onclick="toggleButton()">
+                        <span class="slider"></span>
+                      </label>
+                      
+                    <p>Contact Bank Transaction Info:</p>
+                    <label class="slider-container">
+                        <input type="checkbox" id="toggleBtn" onclick="toggleButton()">
+                        <span class="slider"></span>
+                      </label>
+                      
+
+                    <button class="btn"><a href="">Save</a></button>
+                </form>
+            </div>
+            <div class="right">
+                <img src="fraud.png" alt="" />
+            </div>
+            
+        </div>
+        
+
+
+        <script>
+            // Function to toggle the sliding button
+            function toggleButton() {
+              var checkBox = document.getElementById("toggleBtn");
+              if (checkBox.checked) {
+                // Action when the button is enabled
+                console.log("Button enabled");
+              } else {
+                // Action when the button is disabled
+                console.log("Button disabled");
+              }
+            }
+          </script>
+</body>
+
+</html>

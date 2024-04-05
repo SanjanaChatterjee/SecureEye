@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <title>Login Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap" rel="stylesheet">
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    .bg-gradient {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        background: linear-gradient(180deg,
+      #4d438e 0%,
+      rgba(77, 69, 144, 0.961) 0.01%,
+      rgba(77, 69, 144, 0.961) 0.02%,
+      rgba(77, 70, 145, 0.950889) 0.03%,
+      rgba(74, 77, 155, 0.81557) 0.04%,
+      rgba(74, 77, 155, 0.81557) 17.4%,
+      rgba(62, 113, 204, 0.172163) 99.99%,
+      rgba(59, 122, 217, 0) 100%);
+
+    }
+     .headline {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 80px;
+        font-size: 50px;
+        font-family: "Bruno Ace", sans-serif;
+    }
+    .right img {
+    width: 435px;
+    height: 507px;
+    margin-left: 1148px;
+    margin-top: -404px;
+}
+.main-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  width: auto;
+  margin-top: 30px;
+
+}
+
+.main-form input {
+  width: 400px;
+  height: 30px;
+  padding: 6px;
+  border: none;
+  border-radius: 20px;
+  font-size: 17px;
+}
+
+.main-form label {
+  color: aliceblue;
+  font-size: 17px;
+}
+
+.form-div {
+    background: linear-gradient(90deg, rgba(58, 154, 195, 0.64) 0%, rgba(101, 218, 234, 0.478538) 95.82%);
+    width: 646px;
+    height: 354px;
+    display: flex;
+    border-radius: 120px;
+    justify-content: center;
+    padding: 10px;
+    margin-left: 181px;
+    margin-top: 36px;
+}
+
+.btn {
+  color: black;
+  background-color: #85fd7b;
+  padding: 4px 14px;
+  border: 3px solid rgb(15, 15, 15);
+  border-radius: 6px;
+  font-size: 20px;
+  cursor: pointer;
+  margin: auto;
+}
+.btn:hover {
+   background-color: #d2b8d4; 
+  color: black; }
+  .main-form button a{
+    text-decoration: none;
+  }
+  .change{
+    margin-left: 184px;
+    margin-top: -19px
+  }
+  .change button {
+    width: 189px;
+    margin-left: 90px;
+    height: 46px;
+    margin-top: -60px;
+    border-radius: 12px;
+    background-color: #85fd7b;
+    font-size: 18px;
+
+}
+.change button a{
+    text-decoration: none;
+}
+</style>
+
+<body>
+    <div class="bg-gradient">
+        <div class="headline">
+            <p>Account</p>
+            <p>Details</p>
+        </div>
+        <div class="container">
+            <div class="form-div">
+                <form action="" class="main-form">
+                    <label for="">Account Number</label>
+                    <input type="number" />
+                    <label for="">Branch Name</label>
+                    <input type="text" />
+                    <label for="">Card Number</label>
+                    <input type="number" />
+                    <button class="btn"><a href="">Log In</a></button>
+                </form>
+            </div>
+            <div class="right">
+                <img src="walt.png" alt="" />
+            </div>
+            
+        </div>
+        <div class="change">
+            <button><a href="">Change Account</a></button>
+            <button><a href="">Delete Account</a></button>
+        </div>
+    </div>
+</body>
+
+</html>
